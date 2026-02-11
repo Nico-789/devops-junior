@@ -1,0 +1,16 @@
+name: CI DevOps Junior
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout del código
+      uses: actions/checkout@v4
+
+    - name: Mensaje de prueba
+      run: echo "CI ejecutándose correctamente 🚀"
