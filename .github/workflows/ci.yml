@@ -1,16 +1,16 @@
-name: CI DevOps Junior
+name: CI + Docker DevOps Junior
 
 on:
   push:
     branches: [ "main" ]
 
 jobs:
-  build:
+  docker:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout del código
       uses: actions/checkout@v4
 
-    - name: Mensaje de prueba
-      run: echo "CI ejecutándose correctamente 🚀"
+    - name: Build imagen Docker
+      run: docker build -t devops-junior .
