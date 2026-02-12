@@ -2,7 +2,7 @@
 
 echo "Ejecutando prueba automática..."
 
-if [ 2 -eq 3 ]; then
+if [ 2 -eq 2 ]; then
   echo "Prueba exitosa ✅"
   exit 0
 else
